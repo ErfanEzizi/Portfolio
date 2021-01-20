@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+{{ post.headline }}
+{% endblock %}
+
+
+{% block body %}
+<div>
+<img src="/static/images/{{ post.thumbnail }}"style="width:60%; display: block; object-fit: cover;">
+</div>
+
+<div>
+{{ post.headline}}
+</div>
+<div>
+{{ post.subtitle }}
+</div>
+<div>
+{{ post.body }}
+</div>
+<div>
+    <a href="{% url 'home' %}">Home</a>
+</div>
+
+{% endblock %}

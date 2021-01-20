@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+Delete
+{% endblock %}
+
+
+{% block body %}
+<form action="" method="POST">
+    {% csrf_token %}
+    <h4>Are you sure you want to delete {{ item }}?</h4>
+    <input type="submit" value="Yes" class="myButton">
+</form>
+{% endblock %}
