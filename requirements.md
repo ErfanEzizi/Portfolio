@@ -1,62 +1,69 @@
-(most part is already done for you but just incase <3)
-
-
-
-First after open folder on your cmd/terminal type :
-
-1."cd Portfolio"
-
-2."python manage.py makemigrations","python manage.py migrate".
-
-3."python manage.py collectstatic"
-
-4.i used django-crispy-forms for the bootsrape compnent so type "pip install django-crispy-forms" and go settings.py in folder Portfolio to add 'crispy-forms' to INSTALLED_APPS.
-
-5."pip install django-filter" and same step as last one go to settings.py and add to INSTALLED_APPS.
-
-6."pip install pillow" for image processing. you dont need to add this to settings.py.
-
-7.Your settings.py should look something like this:
-
-INSTALLED_APPS = [
-
-    'base.apps.BaseConfig',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'crispy_forms',
-    'django_filters'
-]
-
-8.And for static files and email components:
-
-STATIC_URL = '/static/'
-
-MEDIA_URL = '/images/'
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
-EMAIL_HOST = 'smtp.gmail.com'
-
-EMAIL_HOST_USER = 'erfanazizitd@gmail.com'
-
-EMAIL_HOST_PASSWORD = 'qsydimasccwxybmm'
-
-EMAIL_PORT = 587
-
-EMAIL_USE_TLS = True
-
-9. Make sure to create a super user to see more featurs of the site "python manage.py createsuperuser"
-
-(IF you have any problems feel free to email me to the address above <3)
+python-dateutil==2.8.1
+app==0.0.1
+appdirs==1.4.3
+asgiref==3.2.7
+astroid==2.3.3
+autopep8==1.5
+boto3==1.16.57
+botocore==1.19.57
+cachelib==0.1
+certifi==2020.4.5.1
+chardet==3.0.4
+click==7.1.2
+colorama==0.4.3
+distlib==0.3.0
+dj-database-url==0.5.0
+Django==3.0.5
+django-crispy-forms==1.9.2
+django-filter==2.4.0
+django-heroku==0.3.1
+django-storages==1.11.1
+djangorestframework==3.12.2
+dominate==2.5.1
+fanstatic==1.1
+filelock==3.0.12
+Flask==1.1.2
+Flask-Session==0.3.2
+get==2019.4.13
+gunicorn==20.0.4
+idna==2.9
+isort==4.3.21
+itsdangerous==1.1.0
+Jinja2==2.11.2
+jmespath==0.10.0
+js==1.0
+lazy-object-proxy==1.4.3
+markdown2==2.3.9
+MarkupSafe==1.1.1
+mccabe==0.6.1
+Pillow==7.2.0
+pipenv==2018.11.26
+post==2019.4.13
+psycopg2==2.8.5
+psycopg2-binary==2.8.5
+public==2019.4.13
+pycodestyle==2.5.0
+pygame==1.9.6
+pylint==2.4.4
+pylint-django==2.3.0
+pylint-plugin-utils==0.6
+python-dateutil==2.8.1
+python-decouple==3.4
+pytz==2019.3
+query-string==2019.4.13
+request==2019.4.13
+requests==2.23.0
+rope==0.16.0
+s3transfer==0.3.4
+shutilwhich==1.1.0
+six==1.14.0
+sql==0.4.0
+SQLAlchemy==1.3.17
+sqlparse==0.3.1
+urllib3==1.25.9
+virtualenv==20.0.18
+virtualenv-clone==0.5.4
+WebOb==1.8.6
+Werkzeug==1.0.1
+whitenoise==5.2.0
+wrapt==1.11.2
