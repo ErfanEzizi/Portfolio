@@ -2,7 +2,6 @@ asgiref==3.2.10
 boto3==1.14.31
 botocore==1.17.31
 Django==3.0.8
-decouple==0.0.7
 django-ckeditor==5.9.0
 django-crispy-forms==1.9.2
 django-filter==2.3.0
