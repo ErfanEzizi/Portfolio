@@ -1,1 +1,0 @@
-web: gunicorn --pythonpath Portfolio Portfolio.wsgi --log-file -
