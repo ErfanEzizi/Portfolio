@@ -327,6 +327,10 @@ textarea {
 .filter {
   padding: 20px;
 }
+#descriptionbox {
+  margin-right: 150px;
+  margin-left: 150px;
+}
 
 @media screen and (max-width: 1200px) {
   .main-container {
