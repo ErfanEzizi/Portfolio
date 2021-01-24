@@ -12,7 +12,7 @@ class Tag(models.Model):
 
 class Post(models.Model):
     thumbnail = models.ImageField(
-        blank=True, null=True, upload_to="imgs", default="defult.jpg")
+        blank=True, null=True, upload_to="images/imgs", default="/images/defult.jpg")
     headline = models.CharField(max_length=300, null=True)
     subtitle = models.CharField(max_length=300, blank=True, null=True)
     body = models.TextField(blank=True, null=True)
